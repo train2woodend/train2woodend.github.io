@@ -1,0 +1,33 @@
+
+.content {
+  margin-top: 4rem;
+}
+
+table.table .departure {
+  width: 1%;
+  text-align: right;
+}
+
+table.table .arrival {
+  width: 1%;
+  text-align: right;
+}
+
+table.table .service {
+  width: 98%;
+  text-align: right;
+}
+
+/*
+table.table td.service::first-letter {
+  text-transform: capitalize;
+}
+*/
+
+table.table .service.bus {
+  color: red;
+  font-weight: bold;
+}
+
+table.table .service.train {
+}
