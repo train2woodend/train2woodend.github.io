@@ -23,7 +23,6 @@ function App() {
     if (data) {
       setTravelDays(data);
     }
-
   }
 
   // ...
@@ -40,32 +39,27 @@ function App() {
     <>
       <Navbar />
       <div className="content p-2">
+        <form>
 
-        {allDirections && (
-          <>
-            <div className="mb-1">
+          {allDirections && (
+            <>
               <SelectDirection directions={allDirections} selectDirection={selectDirection} />
-            </div>
-          </>
-        )}
+            </>
+          )}
 
-        {travelDays && (
-          <>
-            <div className="mb-1">
+          {travelDays && (
+            <>
               <SelectTravelDay travelDays={travelDays} selected={selectedTravelDay} selectTravelDay={selectTravelDay} />
-            </div>
-          </>
-        )}
+            </>
+          )}
 
-        {services && (
-          <>
-            <div className="mb-1">
+          {services && (
+            <>
               <ShowServices services={services} />
-            </div>
-          </>
-        )}
+            </>
+          )}
 
-
+        </form>
       </div>
     </>
   )
