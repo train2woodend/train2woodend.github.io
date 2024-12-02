@@ -23,7 +23,6 @@ function App() {
     if (data) {
       setTravelDays(data);
     }
-
   }
 
   // ...
