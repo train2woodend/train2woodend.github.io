@@ -13,8 +13,9 @@ const ShowServices = (props) => {
   };
 
   return (
-    <>
-      <table className="table table-striped">
+    <div className="mb-3">
+      <label for="services" class="form-label mb-1">Services:</label>
+      <table name="services" className="table table-striped">
         <thead>
           <tr>
             <th className="departure" scope="col">Departure:</th>
@@ -26,7 +27,7 @@ const ShowServices = (props) => {
           <TableRow services={props.services} />
         </tbody>
       </table>
-    </>
+    </div>
   );
 }
 
