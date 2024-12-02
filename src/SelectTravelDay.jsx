@@ -16,9 +16,7 @@ const SelectTravelDay = (props) => {
       onChange={(item) => { props.selectTravelDay(item); }}
       getOptionLabel={(options) => { return options["weekday"]; }}
       getOptionValue={(options) => { return options["id"]; }}
-
-      //key={`my_unique_select_key__${selected}`}
-      //value={selected || ''}
+      value={props.selected || ''}
     />
   )
 }
